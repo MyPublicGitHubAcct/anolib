@@ -93,6 +93,7 @@ venv/
 __pycache__
 .pytest_cache
 log.txt
+python/z_sketch.py
 
 # project-specific python
 **/playground.py
