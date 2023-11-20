@@ -15,26 +15,26 @@ pytest
 
 The files in this project are organized as described below. C and C++ code is in folders & Python uses a similar file naming convention.
 
-_Note_: The "main" application (made up for main.h and main.cpp) is only used for testing the application, for now. This may continue to exist, or it may be deleted in the future.
-
 - __inc__ holds include files for all classes; these are in sub-folders for each topical area e.g., filters, oscillators.
 - __libs__ holds libraries used.
-- __python__ holds files used for algorithm design. These are prefixed with a four-character code to describe purpose.
-  - _test_ includes scripts used to do testing of the algorithms defined in other files.
-  - _algo_ includes scripts used to perform something; these scripts are used by _test_ scripts.
-  - _util_ includes scripts used for testing the algorithms, for example test waveforms.
-  - _ntbk_ files are Python notebooks used where they provide benefit beyond what is possible without them.
+- __python__ holds files used for algorithm design. More on this below.
 - __src__ holds compilation units defined in __inc__; the folder structure should match.
 - __tests__ holds testing files used to test the classes defined in __inc__ and __src__.
 
+__Note__: _The "main" application (made up for main.h and main.cpp) is only used for testing the application, for now. This may continue to exist, or it may be deleted in the future._
 
 ### Python files
 
 - __z_sketch.py__ is used for experiments/design. The results of those experiments are copied into the associated __algo__ and __test__ files.
 
+Four-character prefixes are used to describe purpose for each file. These are:
+- _test_ includes scripts used to do testing of the algorithms defined in other files.
+- _algo_ includes scripts used to perform something; these scripts are used by _test_ scripts.
+- _hope_ includes data to be used as expectations for testing.
+- _util_ includes scripts used for testing the algorithms, for example test waveforms.
+- _ntbk_ files are Python notebooks used where they provide benefit beyond what is possible without them.
 
-After the prefixes described above, a second set of characters are used to describe the purpose of the file. These are:
-
+After the prefixes described above, a second set of characters are used to describe the purpose of the file.
 - _audio_ for audio-specific classes.
 - _core_ for core classes like containers, memory management, etc.
 - _crypto_ for crypto.
