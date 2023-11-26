@@ -31,6 +31,7 @@ Four-character prefixes are used to describe purpose for each file. These are:
 - _test_ includes scripts used to do testing of the algorithms defined in other files.
 - _algo_ includes scripts used to perform something; these scripts are used by _test_ scripts.
 - _hope_ includes data to be used as expectations for testing.
+- _inpt_ includes data to be used as predetermined inputs for testing.
 - _util_ includes scripts used for testing the algorithms, for example test waveforms.
 - _ntbk_ files are Python notebooks used where they provide benefit beyond what is possible without them.
 

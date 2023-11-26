@@ -94,6 +94,7 @@ __pycache__
 .pytest_cache
 log.txt
 python/z_sketch.py
+python/wave-files/**
 
 # project-specific python
 **/playground.py

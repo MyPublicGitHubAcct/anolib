@@ -45,6 +45,12 @@ def wv_square(fs, t, freq):
 #
 #####################################################
 
+def wv_triangle(fs, t, freq):
+    """ using scipy's saw, width=0.5 is a triangle """
+    samples = np.arange(t * fs) / fs
+    out = signal.sawtooth(2 * np.pi * freq * samples, 0.5)
+    return out
+
 
 def two_sines(fs, f1, f2, mag1, mag2, time):
     """
@@ -58,10 +64,10 @@ def two_sines(fs, f1, f2, mag1, mag2, time):
     :return:
     """
     fs = fs
-    t_lims = [0, time]
+    t_limits = [0, time]
     f = [f1, f2]
     mag = [mag1, mag2]
-    t = np.linspace(t_lims[0], t_lims[1], (t_lims[1] - t_lims[0]) * fs)
+    t = np.linspace(t_limits[0], t_limits[1], (t_limits[1] - t_limits[0]) * fs)
     y = mag[0] * np.sin(2 * np.pi * f[0] * t) + mag[1] * np.sin(2 * np.pi * f[1] * t)
     y_hat = np.fft.fft(y)
     f_cycles = np.fft.fftfreq(len(t), d=1.0 / fs)  # the frequencies in cycles
