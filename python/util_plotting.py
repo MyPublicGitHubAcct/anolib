@@ -218,7 +218,9 @@ def zplane(b, a):
 
 def plot_magnitude_spectrum(sig, title, fs, freq_ratio=0.5):
     """
-    TODO: (1) need to center output around 0, (2) need to reduce so don't see both positive and negative parts of the mirrored spectrum, (3) consider if this will work for non-periodic data
+    TODO: (1) need to center output around 0
+          (2) need to reduce so don't see both positive and negative parts of the mirrored spectrum
+          (3) consider if this will work for non-periodic data
     """
     ft = np.fft.fft(sig)
     magnitude_spectrum = np.abs(ft)

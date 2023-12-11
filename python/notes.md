@@ -11,6 +11,12 @@ cd anolib
 pytest
 ```
 
+To run notebook files, do this:
+```zsh
+cd python/notebooks
+jupyter lab
+```
+
 ## Structure
 
 The files in this project are organized as described below. C and C++ code is in folders & Python uses a similar file naming convention.

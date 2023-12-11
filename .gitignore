@@ -95,6 +95,7 @@ __pycache__
 log.txt
 python/z_sketch.py
 python/wave-files/**
+python/notebooks/papers/**
 
 # project-specific python
 **/playground.py
