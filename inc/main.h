@@ -1,6 +1,6 @@
 /**
  * main.h
- * Copyright (c) AnoesisAudio 2023
+ * Copyright (c) AnoesisAudio 2024
  */
 
 #ifndef MAIN_H

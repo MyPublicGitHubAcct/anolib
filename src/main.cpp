@@ -1,6 +1,6 @@
 /**
  * main.cpp
- * Copyright (c) AnoesisAudio 2023
+ * Copyright (c) AnoesisAudio 2024
  */
 
 #include "../inc/main.h"
